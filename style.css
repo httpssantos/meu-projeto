@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: radial-gradient(circle farthest-corner at 7.2% 13.6%, rgba(37,249,245,1) 0%, rgba(8,70,218,1) 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(129, 213, 228, 0.817);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(91, 137, 235, 0.817);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+    margin: 0;
+}
+
+.clear-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #1973da;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.clear-btn:hover {
+    background-color: #0e84e4;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 150px;
+}
+
+label {
+    font-weight: 500;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.generate-btn {
+    background-color: #0c7ae0;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.generate-btn:hover {
+    background-color: #3389eb;
+}
+
+.output {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    font-size: 13px;
+}
+
+.copy-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.copy-btn:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 1px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+}

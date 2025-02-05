@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de OS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de OS</h1>
+        <button class="clear-btn" onclick="limparDados()">Limpar Dados</button>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="titulo">Título</label>
+                <select id="titulo">
+                    <option value="Atenuação">Atenuação</option>
+                    <option value="Rompimento">Rompimento</option>
+                    <option value="Visita técnica">Visita técnica</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="idOs">ID OS</label>
+                <input type="text" id="idOs" required>
+            </div>
+            <div class="form-group">
+                <label for="cliente">Cliente</label>
+                <input type="text" id="cliente" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="descricao">Descrição</label>
+                <input type="text" id="descricao" required>
+            </div>
+            <div class="form-group">
+                <label for="periodo">Período</label>
+                <select id="periodo">
+                    <option value="Manhã">Manhã</option>
+                    <option value="Tarde">Tarde</option>
+                    <option value="Qualquer">Qualquer</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="data">Data</label>
+                <input type="date" id="data" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="obs">Observação</label>
+                <input type="text" id="obs" required>
+            </div>
+            <div class="form-group">
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX" required>
+            </div>        
+            <div class="form-group">
+                <label for="atendente">Atendente</label>
+                <select id="atendente">
+                    <option value="Pedro">Pedro</option>
+                    <option value="Vinicius">Vinicius</option>
+                    <option value="Paulo">Paulo</option>
+                    <option value="Thayza">Thayza</option>
+                </select>
+            </div>
+        </div>
+        <button class="generate-btn" onclick="gerarScript()">Gerar Script</button>
+        <div class="output" id="output"></div>
+        <button class="copy-btn" id="copyButton" onclick="copiarScript()" style="display:none;">Copiar Script</button>
+    </div>
+    <footer>
+        Todos os direitos reservados - 2025 - PP
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
+</body>
+</html>
